@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+        <br><br><br><br><br>
+            {% for post in posts %}
+                <h3> {{post.nomi}} </h3>
+                <img src=" {{ post.rasm.url }}" width="300" alt="image for {{ post.nomi }}">
+
+            {% endfor %}
+        <br><br><br><br><br>
+    {% endblock content %}
